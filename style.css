@@ -224,6 +224,10 @@ footer {
   left: 1em;
 }
 
+.hide-sidebar-span-link {
+	display: none;
+}
+
 .second-sidebar-links > div {
   margin-top: 20px;
 }
