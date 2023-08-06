@@ -18,7 +18,7 @@
   </head>
   <body>
     <main>
-      <header class="border rounded">
+      <header>
         <div class="brand">
           <div class="menubar">
             <span class="material-symbols-outlined"> menu </span>
@@ -84,13 +84,22 @@
 
         <div class="header-center">
           <div class="search-area">
-            <input type="search" name="search" placeholder="Ara" class="border"/>
+            <input
+              type="search"
+              name="search"
+              placeholder="Ara"
+              class="border"
+            />
           </div>
 
           <div class="search-button">
             <button>
               <span class="material-symbols-outlined"> search </span>
             </button>
+          </div>
+
+          <div class="mic">
+            <span class="material-symbols-outlined"> mic </span>
           </div>
         </div>
 
@@ -99,13 +108,289 @@
             <span class="material-symbols-outlined"> video_call </span>
           </div>
           <div class="notification">
-            <span class="material-symbols-outlined"> notifications </span>
+            <span class="material-symbols-outlined position-relative">
+              notifications
+              <span
+                class="position-absolute top-25 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"
+                style="font-size: 9px"
+                >6<span class="visually-hidden">unread messages</span></span
+              >
+            </span>
+          </div>
+
+          <div class="user">
+            <a href="#">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png"
+                alt="user"
+                width="40px"
+                height="40px"
+              />
+            </a>
           </div>
         </div>
       </header>
 
-      <article class="border rounded">Content</article>
-      <aside class="border rounded">Sidebar</aside>
+      <article>
+        <div class="content-links">
+          <span><a href="#">Tumu</a></span>
+          <span><a href="#">Mix'ler</a></span>
+          <span><a href="#">Muzik</a></span>
+          <span><a href="#">Canli</a></span>
+          <span><a href="#">Oyun</a></span>
+          <span><a href="#">Cizgi filmler</a></span>
+          <span><a href="#">Son yuklenenler</a></span>
+          <span><a href="#">Izlenenler</a></span>
+          <span><a href="#">Yeni oneriler</a></span>
+        </div>
+
+        <div class="videos">
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+              poster="https://i.ytimg.com/vi/APWhx97QvxE/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBMTNWtYXv_5DY1uIY566lDeUwsZQ"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=APWhx97QvxE&list=RDAPWhx97QvxE&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">
+              Mix - Eric Clapton - I Shot The Sheriff
+            </h4>
+            <h4 class="fw-bold fs-6">
+              [Crossroads 2010] (Official Live Video)
+            </h4>
+            <p class="text-muted fs-6">
+              Eric Clapton, B.B King, Mark Knopfler ve daha fazlasi
+            </p>
+          </div>
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+              poster="https://i.ytimg.com/vi/Ew_yAxw4VhM/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYfyBZKBMwDw==&rs=AOn4CLBH_7bKZ3cI9PnKTScFXPpZqsq-_Q"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=Ew_yAxw4VhM&list=RDEw_yAxw4VhM&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">Mix - Buyuk Ev Ablukada - HOSCAKAL</h4>
+            <h4 class="fw-bold fs-6">KADAR</h4>
+            <p class="text-muted fs-6">
+              Buyuk Ev Ablukada, Paptircem, mor ve otesi ve
+            </p>
+            <p class="text-muted">daha fazlasi</p>
+          </div>
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+              poster="https://i.ytimg.com/vi/GlUnmEJd2XU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAR0DmdVJCdeOJHwJzzG-O7ahZpiQ"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=APWhx97QvxE&list=RDAPWhx97QvxE&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">Oppenheimer:Ben Simdi, Dunyalarin</h4>
+            <h4 class="fw-bold fs-6">Yok Edicisi Olan Olum Oldum!</h4>
+            <p class="text-muted fs-6">Evrim Agaci</p>
+            <p class="text-muted">1,8 Mn goruntulenme * 2 hafta once</p>
+          </div>
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+              poster="https://i.ytimg.com/vi/n_ahuVrUmGI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDihTNpDcrinkxleLw6lhitM3SYtA"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=APWhx97QvxE&list=RDAPWhx97QvxE&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">Tom Odell - Butterflies (Lyrics) feat.</h4>
+            <h4 class="fw-bold fs-6">AURORA</h4>
+            <p class="text-muted fs-6">Shooting Star</p>
+            <p class="text-muted">807 goruntuleme * 1 gun once</p>
+          </div>
+        </div>
+        <div class="videos">
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+			  poster="https://i.ytimg.com/vi/8S4fa43J8ro/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxMZ8YqiVfBdMIXEnaYYBKlqCWmQ"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=APWhx97QvxE&list=RDAPWhx97QvxE&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">
+				Seafret-Atlantis Lyrics
+            </h4>
+            <h4 class="fw-bold fs-6">
+            </h4>
+            <p class="text-muted fs-6">
+			Music Lyrics
+            </p>
+			<p class="text-muted">8,5 B goruntuleme * 3 hafta once</p>
+          </div>
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+			  poster="https://i.ytimg.com/vi/IGVWLd3P8ig/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuYkUrFlIv_uMxCtfBjVkL43ZDDw"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=Ew_yAxw4VhM&list=RDEw_yAxw4VhM&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">How I build a website from scratch</h4>
+            <p class="text-muted fs-6">
+			Kevin Powell
+            </p>
+            <p class="text-muted">60 B goruntuleme * 9 gun once yayinlandi</p>
+          </div>
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+			  poster="https://i.ytimg.com/vi/lAwYodrBr2Q/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBejbqnLsBR4QIg1FtDo5kfY2WXxg"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=APWhx97QvxE&list=RDAPWhx97QvxE&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">Mix - M83 - "Wait" (Official Video)</h4>
+            <p class="text-muted fs-6">M83, The Cinematic Orchestra, Sleeping At Last ve</p>
+            <p class="text-muted">daha fazlasi</p>
+          </div>
+          <div>
+            <video
+              class="border rounded"
+              width="341.66"
+              height="192.17"
+              controls
+			  poster="https://i.ytimg.com/vi/ebbcn2TgCug/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD8zFkw308RICArPjxmRzYCQ-l6dA"
+            >
+              <source
+                src="https://www.youtube.com/watch?v=APWhx97QvxE&list=RDAPWhx97QvxE&start_radio=1"
+                type="video/mp4"
+              />
+            </video>
+            <h4 class="fw-bold fs-6">Mix - "I Lost My Mind"[Slowed](Turkce Ceviri)</h4>
+            <p class="text-muted fs-6">Billie Eilish, Carla Morrison, Tom Odell ve daha fazlasi</p>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <div class="first-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> home </span>
+              <span class="sidebar-span-link">Ana Sayfa</span>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                trail_length_short
+              </span>
+              <span class="sidebar-span-link">Shorts</span>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> loyalty </span>
+              <span class="sidebar-span-link">Abonelikler</span>
+            </a>
+          </div>
+          <div class="border-bottom">
+            <a href="#">
+              <span class="material-symbols-outlined"> play_circle </span>
+              <span class="sidebar-span-link">Youtube Music</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="second-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> library_books </span>
+              <span class="sidebar-span-link">Kitaplik</span>
+            </a>
+          </div>
+        </div>
+        <div class="second-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> device_reset </span>
+              <span class="sidebar-span-link">Gecmis</span>
+            </a>
+          </div>
+        </div>
+        <div class="second-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> smart_display </span>
+              <span class="sidebar-span-link">Vidaolariniz</span>
+            </a>
+          </div>
+        </div>
+        <div class="second-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> schedule </span>
+              <span class="sidebar-span-link">Daha sonra izle</span>
+            </a>
+          </div>
+        </div>
+        <div class="second-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> download </span>
+              <span class="sidebar-span-link">Indirilenler</span>
+            </a>
+          </div>
+        </div>
+        <div class="second-sidebar-links">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined"> thumb_up </span>
+              <span class="sidebar-span-link">Begendigim videolar</span>
+            </a>
+          </div>
+        </div>
+        <div class="second-sidebar-links">
+          <div class="border-bottom">
+            <a href="#">
+              <span class="material-symbols-outlined"> expand_more </span>
+              <span class="sidebar-span-link">Daha fazla goster</span>
+            </a>
+          </div>
+        </div>
+      </aside>
       <footer class="border rounded">Footer</footer>
     </main>
 
