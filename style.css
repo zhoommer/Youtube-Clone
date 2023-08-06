@@ -53,9 +53,8 @@ main {
   display: grid;
   grid-template-areas:
     "head head head"
-    "aside content content"
-    "footer footer footer";
-  grid-template-rows: 5em auto 5em;
+    "aside content content";
+  grid-template-rows: 5em 5em;
   grid-template-columns: 2fr 10fr;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
@@ -76,9 +75,6 @@ aside {
   transition: all 0.3s ease;
 }
 
-footer {
-  grid-area: footer;
-}
 
 /* HEADER STYLE AREA */
 
@@ -308,6 +304,22 @@ footer {
   .search-button > span {
     width: 10px;
     height: 10px;
+  }
+
+  .camera-icon > span {
+	position: relative;
+	left: 15px;
+  }
+
+  .content-links {
+	  display: flex;
+	  height: 40px;
+	  align-items: center;
+  }
+
+  .content-links > span {
+	  font-size: 8px;
+	  margin-left: 5px;
   }
 
   aside {
