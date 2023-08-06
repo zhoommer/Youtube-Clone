@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --color-primary: #6c9bcf;
+  --color-danger: #ff0060;
+  --color-success: #1b9c85;
+  --color-warning: #f7d060;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --color-sidebar-background: #020322;
+  --color-light-background: #E5E8E8;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "head head head"
+        "aside content content"
+        "footer footer footer";
+    grid-template-rows: 5em auto 5em;
+    grid-template-columns: 2fr 10fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+header {
+    grid-area: head;
+    display: flex;
+}
+
+article {
+    grid-area: content;
+}
+
+aside {
+    grid: aside;
+    height: 100vh;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* HEADER STYLE AREA */
+
+.menubar > span {
+    position: relative;
+    top: 0.15em;
+    cursor: pointer;
+}
+
+.brand {
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+}
+
+.brand-image {
+    position: relative;
+    left: 3em;
+}
+
+.header-center {
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.search-area > input {
+    width: 40em;
+    height: 2.97em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 1rem;
+}
+
+.search-button > button {
+    width: 5em;
+    height: 3em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button > button:hover {
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+.header-end {
+    flex: 33%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10em;
+    align-items: center;
+}
+
+.camera-icon > span {
+    cursor: pointer;
+    transition: all 0.3 ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera-icon > span:hover {
+    background-color: var(--color-light-background);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.notification > span {
+    position: relative;
+    left: 1em;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification > span:hover {
+    background-color: var(--color-light-background);
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE WEB CODES */
