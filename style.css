@@ -274,6 +274,7 @@ aside {
 
 .videos {
 	display: flex;
+  flex-wrap: wrap;
 	position: relative;
 	top: 4em;
 }
